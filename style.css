@@ -1,0 +1,1542 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+pre {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+    margin-top: 10px;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.7s;
+    text-decoration-color: transparent;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff66cc;
+    text-decoration-thickness: 2px;
+}
+
+header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth-buttons button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+header .auth-buttons button:hover {
+    background: rgba(217, 217, 217, 0.77);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-text h1 {
+    text-align: start;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 58px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.hero-text p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 149%;
+    text-align: start;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.7s;
+}
+
+.hero-text button:hover {
+    background: rgba(206, 206, 206, 0.3);
+    box-shadow: 4px 5px 5px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.service {
+    max-width: 265px;
+}
+
+.service img {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.service img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.service h2 {
+    margin: 7px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.service h2:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.service p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7a7a7a;
+}
+
+/* Masters, About, Works Sections */
+.masters,
+.about,
+.works {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.masters {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.masters-text,
+.about-text {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.masters h2,
+.about h2,
+.works h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+.masters p,
+.about p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #7a7a7a;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.masters button,
+.about button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.masters button {
+    border: 1px solid black;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.masters button:hover {
+    background: rgba(217, 217, 217, 0.77);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.about button {
+    border: none;
+    background: #ff66cc;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.masters-gallery,
+.works-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.masters-gallery img,
+.works-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about pre {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Дополнительные стили для прайс-листов service.php*/
+
+.price-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.price-list .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.price-list .hero img {
+    width: 100%;
+    height: auto;
+}
+
+.price-list .hero-text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: rgba(217, 217, 217, 0.77);
+    padding: 20px;
+}
+
+.price-list .hero-text h1 {
+    font-size: 2.5em;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.price-list .hero-text p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.price-list-description {
+    margin: 20px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+.price-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+.price-items li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.price-items li .price {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    border: 1px solid black;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.price-items li .price:hover {
+    background: rgba(217, 217, 217, 0.77);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.price-items li span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding-top: 10px;
+    display: flex;
+    background-color: #f3f3f3;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .logo img {
+    width: 443px;
+    height: 208px;
+}
+
+.footer-services {
+    margin: 20px 0;
+    text-align: start;
+}
+
+.footer-services h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.footer-services ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-services ul li {
+    margin: 15px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #5d5d5d;
+    text-align: start;
+}
+
+.rights {
+    display: flex;
+    color: #fff;
+    background-color: #000;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 170px;
+}
+
+.rights p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 200%;
+}
+
+/* Дополнительные стили для мастеров mastres.php*/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.masters {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+}
+
+.masters-gallery {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.master {
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    padding: 1em;
+}
+
+.master img {
+    width: 100%;
+    height: 320px;
+    border-radius: 2px;
+}
+
+.master h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: #333;
+    height: 55px;
+}
+
+.master p {
+    font-size: 1em;
+    color: #777;
+    margin: 0.5em 0;
+}
+
+.master .btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    border: 1px solid black;
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.master .btn:hover {
+    background: rgba(217, 217, 217, 0.77);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.img-text {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    margin: 20px;
+    font-size: 16px;
+}
+
+.pagination a {
+    font-size: 16px;
+    padding: 1px 6px;
+    border: 2px solid rgb(205 205 205);
+    border-radius: 2px;
+    color: rgb(122 106 106);
+}
+
+/* Дополнительные стили для бронирования booking.php*/
+
+.booking {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.book {
+    background-color: #CCC1BB;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.booking-header {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.booking-header pre {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+    margin-top: 50px;
+}
+
+.booking-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-left label {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 218%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #696969;
+    margin-bottom: -10px;
+}
+
+.form-left input[type="text"],
+.form-left select,
+.form-left input[type="date"],
+.form-left input[type="time"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #E8E8E8;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 217%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.form-left select {
+    padding: 0.9em;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.177);
+}
+
+.total {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    line-height: 70%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #696969;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.total span {
+    color: #000000;
+    font-weight: 500;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.form-right img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    border: 2px solid rgb(255, 255, 255);
+    background: #ffffff00;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.177);
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+    background: #0000000c;
+}
+
+/* добавление услуги */
+
+.form-left textarea[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #E8E8E8;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 217%;
+    text-transform: uppercase;
+    color: #000;
+    resize: none;
+}
+
+.form-left select {
+    padding: 0.9em;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.177);
+}
+
+/* Registration and Account Pages */
+
+
+.registr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #D3C3BB;
+    width: 1000px;
+    height: 770px;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #D3C3BB;
+    width: 1000px;
+    height: 370px;
+}
+
+.image-side {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+}
+
+.form-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-side select {
+    width: 100%;
+    padding: 22px 18px;
+    margin-top: 37px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #E8E8E8;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.177);
+    font-weight: 400;
+    line-height: 217%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.form-side pre {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.form-side h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 125%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+.form-side label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.form-side input {
+    width: 93%;
+    padding: 22px 18px;
+    margin-top: 37px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #E8E8E8;
+}
+
+.form-side input #file-uploud-button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 218%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #acacac;
+}
+
+.form-side input::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 218%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #acacac;
+}
+
+.form-side button {
+    padding: 12px 40px;
+    margin-top: 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background: #ffffff00;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.form-side button:hover {
+    background: rgba(217, 217, 217, 0.77);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Account Pages */
+
+.account_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.personal-cabinet {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #CCC1BB;
+    border-radius: 10px;
+    width: 65%;
+    align-items: center;
+}
+
+.personal-info,
+.appointments {
+    width: 50%;
+}
+
+.personal-info {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.personal-info form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.personal-info img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.personal-info input {
+    width: 60%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 185%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #696969;
+}
+
+.personal-info button {
+    padding: 10px 15px;
+    background-color: #fff0;
+    color: #ffffff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.personal-info button:hover {
+    background-color: rgba(217, 217, 217, 0.77);
+}
+
+.appointments h2,
+.appointments h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointments .appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.appointments .appointment:hover {
+    background-color: #f9f9f9;
+}
+
+.appointments .appointment .date {
+    color: #e50072;
+    text-align: center;
+    border: 2px solid #e50072;
+    border-radius: 5px;
+    padding: 1px 4px 1px 4px;
+    letter-spacing: 0.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.appointments .appointment .details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.details_no {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.appointments .appointment .details p {
+    margin: 5px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 200%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+}
+
+.appointments .appointment .price {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #000;
+}
+
+.appointments .appointment .price p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 138%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.appointments .appointment button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointments .appointment button:hover {
+    background-color: rgba(162, 161, 161, 0.77);
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.load-more button {
+    padding: 10px 20px;
+    background-color: #ffffff00;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.load-more button:hover {
+    background-color: rgba(217, 217, 217, 0.77);
+}
+
+/* Service One Pages */
+
+.service_one-cont {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-block {
+    width: 70%;
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #CCC1BB;
+}
+
+.image-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.service-details {
+    width: 60%;
+    padding-left: 20px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-details h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+}
+
+.service-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 156%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.service_descr {
+    padding: 10px;
+    background-color: #E2E0E0;
+}
+
+.service-details p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 218%;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #606060;
+}
+
+.price_one {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #ffffff00;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+/* панель админа */
+
+.account_admin {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin: 0;
+}
+
+.admin-panel {
+    text-align: center;
+    max-width: 1500px;
+}
+
+.admin-panel pre {
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.admin-panel h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #555555;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.admin-panel h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+    color: #000000;
+}
+
+.service-blockk {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-button {
+    background-color: #d1bbae;
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.add-service-link {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.add-service-link:hover {
+    text-decoration: underline;
+}
+
+/* nail service */
+
+.nailservice {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_service {
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-panell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nailservice h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.nailservice h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+    margin-bottom: 10px;
+}
+
+.masters-appointments {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.masters-appointmentsM {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.master-block {
+    background-color: #e4ddd9;
+}
+
+.masters-block {
+    display: flex;
+}
+
+.appointment-block {
+    background-color: #f2eceb;
+}
+
+.master-block,
+.appointment-block {
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    height: 180px;
+    margin: 10px;
+}
+
+.master-info {
+    display: flex;
+    align-items: center;
+}
+
+.master-info img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.master-details p {
+    margin: 5px 0;
+}
+
+.master-details button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d3cbc6;
+    cursor: pointer;
+}
+
+.appointment-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appointment-info img {
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.appointment-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.appointment-date p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff3399;
+}
+
+.appointment-details p {
+    margin: 5px 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 200%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+}
+
+.appointment-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.appointment-actions p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.appointment-actions button {
+    margin-top: 5px;
+    width: 105px;
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a19e9b;
+    cursor: pointer;
+    color: #706f6e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 107%;
+    text-align: center;
+}
+
+.appointment-actions button:last-child {
+    background-color: #ff3399;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 107%;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* услуги админа */
+
+
+.service_adm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.service_adm .admin-panel h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5c5c5c;
+    margin-bottom: 10px;
+}
+
+.services_admin{
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.service-column {
+    width: 45%;
+}
+
+.divider {
+    width: 2px;
+    background-color: #ff3399;
+    margin: 0 1%;
+}
+
+.service-card {
+    border-bottom: 2px solid #ff3399;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.service-details-adm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.service-details-adm .price_del {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.price_del p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price_del span {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.delete-button img {
+    width: 20px;
+    height: 20px;
+}
